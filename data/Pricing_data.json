@@ -1,0 +1,23 @@
+[
+  {
+    "Plan": "Basic",
+    "Price": "400",
+    "Storage": "5GB",
+    "Users": "1",
+    "Support": "Email"
+  },
+  {
+    "Plan": "Professional",
+    "Price": "1000",
+    "Storage": "50GB",
+    "Users": "5",
+    "Support": "Phone, Email"
+  },
+  {
+    "Plan": "Enterprise",
+    "Price": "2000",
+    "Storage": "150GB",
+    "Users": "Unlimited",
+    "Support": "Phone, Email, Chat"
+  }
+]

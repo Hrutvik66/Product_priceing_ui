@@ -1,6 +1,8 @@
+//Next Head
 import Head from "next/head";
-import Image from "next/image";
+//Component
 import Card from "../components/Card";
+//Data
 import data from "../data/Pricing_data.json";
 
 export default function Home() {
@@ -17,6 +19,8 @@ export default function Home() {
         </h1>
         <h3 className="font-semibold text-gray-500">Choose a plan which works best for you</h3>
       </div>
+
+      {/* Mapping through data and send data to component */}
       <div className="flex lg:flex-row flex-col lg:space-x-7 lg:space-y-0 space-y-3">
         {data.map((item) => {
           return <Card key={item.Plan} {...item} />;

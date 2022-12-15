@@ -1,10 +1,12 @@
+//Next Link
 import Link from "next/link";
-import React from "react";
+//Feather Icons
 import { Check, ArrowRight } from "react-feather";
 
 const Card = ({ Plan, Price, Storage, Users, Support }) => {
   return (
     <div>
+      {/* Popular plan */}
       {Plan == "Professional" ? (
         <div className="relative lg:right-[-219px] right-[-300px] top-7 z-50 bg-blue-700 text-white w-[5rem] inline-block text-center rounded-2xl p-[3px] font-semibold">
           Popular
@@ -12,6 +14,8 @@ const Card = ({ Plan, Price, Storage, Users, Support }) => {
       ) : (
         ""
       )}
+
+      {/* Card Structure */}
       <div
         className={`${
           Plan == "Professional"
@@ -33,6 +37,8 @@ const Card = ({ Plan, Price, Storage, Users, Support }) => {
           </h3>
         </div>
         <hr className="w-full bg-[#cfcece] h-[2px]" />
+
+        {/* Features of Plan */}
         <div>
           <ul className="flex flex-col space-y-2">
             <li className="flex space-x-2 items-center">
@@ -50,6 +56,8 @@ const Card = ({ Plan, Price, Storage, Users, Support }) => {
             </li>
           </ul>
         </div>
+
+        {/* Button */}
         <Link href = "/Message">
           <button
             className={`flex items-center w-full justify-center bg-blue-700 p-4 mt-5 text-white outline-none border-none rounded-lg font-semibold space-x-3 cursor-pointer ${
